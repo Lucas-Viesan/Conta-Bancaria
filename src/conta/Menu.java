@@ -1,5 +1,6 @@
 package conta;
 
+import conta.model.Conta;
 import java.util.Scanner;
 
 import conta.util.Cores;
@@ -7,6 +8,13 @@ import conta.util.Cores;
 public class Menu {
     public static void main(String[] args) {
         
+		Conta c1 = new Conta(1, 123, 1, "Adriana", 10000.0f);
+		c1.visualizar();
+		c1.sacar(12000.0f);
+		c1.visualizar();
+		c1.depositar(5000.0f);
+		c1.visualizar();
+    	
         Scanner leia = new Scanner(System.in);
 		
 		int opcao;
@@ -54,7 +62,6 @@ public class Menu {
                     		break;
 				case 3:
 					System.out.println(Cores.TEXT_WHITE + "Consultar dados da Conta - por número\n\n");
-	
                     		break;
 				case 4:
 					System.out.println(Cores.TEXT_WHITE + "Atualizar dados da Conta\n\n");
