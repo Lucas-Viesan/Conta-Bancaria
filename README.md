@@ -1,4 +1,6 @@
-##Digrama de Classes
+
+
+## 📊 Diagrama de Classes 
 
 ```mermaid
 classDiagram
@@ -64,62 +66,5 @@ Conta <|-- ContaPoupanca
 Conta <.. ContaRepository
 ContaRepository <|.. ContaController
 
-
-# Componentes do Sistema
-🔹 Classe Abstrata: Conta
-Define os atributos e métodos básicos de uma conta bancária:
-
-Atributos: número, agência, tipo, titular, saldo
-
-Métodos: saque, depósito, visualização e getters/setters
-
-🔹 ContaCorrente
-Herda de Conta e adiciona:
-
-Limite de crédito
-
-Sobrescrita do método sacar considerando o limite
-
-🔹 ContaPoupanca
-Herda de Conta e adiciona:
-
-Dia de aniversário da conta (utilizado para cálculo de juros, por exemplo)
-
-🔹 Interface ContaRepository
-Define os métodos principais para manipulação das contas:
-
-Procurar, listar, cadastrar, atualizar, deletar
-
-Saque, depósito e transferência
-
-🔹 ContaController
-Implementa a interface ContaRepository e contém a lógica principal do sistema:
-
-Geração de número de conta
-
-Operações de saque, depósito, transferência e busca
-
-
-#Funcionalidades 
-Cadastro de contas (Corrente ou Poupança)
-
-✅ Listagem de todas as contas
-
-✅ Atualização e exclusão de contas
-
-✅ Depósito e saque
-
-✅ Transferência entre contas
-
-✅ Visualização de dados da conta
-
-## Conceitos Praticados
-Herança, Abstração e Polimorfismo
-
-Interface e Encapsulamento
-
-Sobrescrita de métodos
-
-Manipulação de listas com objetos
 
 
