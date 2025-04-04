@@ -1,5 +1,6 @@
 ##Digrama de Classes
 
+```mermaid
 classDiagram
 class Conta {
 <<Abstract>>
